@@ -1,5 +1,3 @@
-#prims
-
 #include<stdio.h>
 #include<stdlib.h>
 
