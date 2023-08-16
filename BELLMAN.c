@@ -9,7 +9,7 @@ void bellman(int s){
             distance[i] = cost[s][i];
         }
     }
-    for(k=1;k<=n-1;k++){
+    for(k=1;k<n;k++){
         for(i=0;i<n;i++){
             for(j=0;j<n;j++){
                 if(cost[i][j] != 0 && distance[i] + cost[i][j] < distance[j]){
@@ -30,11 +30,9 @@ void main(){
         for(j=0;j<n;j++){
             scanf("%d",cost[i][j]);
         }
-        
     }
     for(i=0;i<n;i++){
         distance[i]= 10000;
-        visited[i] = 0;
     }
     
     printf("enter the start node:");
