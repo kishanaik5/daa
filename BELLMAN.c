@@ -4,6 +4,11 @@
 int distance[10],cost[10][10],i,j,k=1,n,s,visited[10];
 
 void bellman(int s){
+    for{i=0;i<n;i++){
+        if(cost[s][i] != 0){
+            distance[i] = cost[s][i];
+        }
+    }
     for(k=1;k<=n-1;k++){
         for(i=0;i<n;i++){
             for(j=0;j<n;j++){
